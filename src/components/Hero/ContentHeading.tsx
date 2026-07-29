@@ -3,7 +3,7 @@ import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
 import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin'
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin'
-import { MainHeading } from './HeroContentTitle'
+import { TitleSvg } from './TitleSvg'
 
 if (typeof window !== "undefined") {
     gsap.registerPlugin(useGSAP, DrawSVGPlugin, MotionPathPlugin)
@@ -11,7 +11,7 @@ if (typeof window !== "undefined") {
 
 type Props = {}
 
-export default function HeroContentHeading({ }: Props) {
+export default function ContentHeading({ }: Props) {
     const containerRef = useRef<HTMLDivElement>(null)
 
     useGSAP(() => {
@@ -35,7 +35,7 @@ export default function HeroContentHeading({ }: Props) {
         <div ref={containerRef} className="flex flex-col gap-2 mb-8">
             <h2 className="opacity-0 text-2xl lg:text-4xl font-semibold text-background-secondary">Manbeer Singh</h2>
             <div className='w-full relative -translate-x-1 lg:-translate-x-3'>
-                <MainHeading className='w-full lg:w-[80%] h-auto' />
+                <TitleSvg className='w-full lg:w-[80%] h-auto' />
             </div>
         </div>
     )
@@ -97,4 +97,3 @@ export function splitPaths(paths: gsap.DOMTarget): SVGPathElement[] {
 
     return newPaths;
 }
-

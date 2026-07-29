@@ -1,7 +1,8 @@
 type Props = {
   className: string
 }
-export const MainHeading = ({ className }: Props) => (
+
+export const TitleSvg = ({ className }: Props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
@@ -36,3 +37,5 @@ export const MainHeading = ({ className }: Props) => (
     </g>
   </svg>
 )
+
+export default TitleSvg

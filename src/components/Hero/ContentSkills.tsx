@@ -10,7 +10,7 @@ if (typeof window !== "undefined") {
 
 type Props = {}
 
-export default function HeroContentSkills({ }: Props) {
+export default function ContentSkills({ }: Props) {
     const containerRef = useRef<HTMLDivElement>(null)
     useGSAP(() => {
         gsap.to(containerRef.current, { delay: 7, opacity: 1, ease: "power2.inOut", duration: 2 })
