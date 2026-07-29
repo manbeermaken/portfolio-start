@@ -29,6 +29,8 @@ body {
   --background-secondary: oklch(0.446 0.043 257.28); /* #45556c */
   --foreground: oklch(20.463% 0.00002 271.152);
   --primary: oklch(74.32% 0.25241 142.518);
+  --accent-1: oklch(0.6321 0.2018 254.09);
+  --accent-2: oklch(75.331% 0.17191 55.708);
 }
 
 .dark {
@@ -41,4 +43,6 @@ body {
   --color-background-secondary: var(--background-secondary);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
+  --color-accent-1: var(--accent-1);
+  --color-accent-2: var(--accent-2);
 }
