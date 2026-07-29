@@ -5,8 +5,37 @@ type Props = {
 export const TitleSvg = ({ className }: Props) => (
   <svg className={className} xmlns="http://www.w3.org/2000/svg" width="673" height="92" fill="none" viewBox="0 0 673 92">
     <mask id="mask0_80_515" width="678" height="98" x="-1" y="-3" maskUnits="userSpaceOnUse" style={{ maskType: "alpha" }}>
-      <path className="trace-path invisible" stroke="#000" strokeWidth="10"
-        d="M38.93 0 9.73 71.8m8.99-59.83 48.66-3.74M16.47 35.15h39.68m14.22-5.98L57.64 59.83l7.49 5.23 8.98-8.23m0 0 9.74-21.68M74.1 56.83l12 11.22M115.3 3 93.58 68.05M132.5 3l-21.7 65.05m79.35-48.6 9.73-11.22-9.73-5.24-14.97 8.23-6 11.21v6.74l11.99 17.94 3.74 9.72-5.99 8.23-7.49 3-9.73 1.49h-7.48l-4.5-5.98 1.5-6.74m76.36-50.85-29.94 62.07h5.99l5.98-4.48 2.25-3.74m-16.47-30.66 38.93-2.25m19.46 17.95-8.23 11.96-6 5.24-8.23 1.5v-6.74l3-7.47 5.24-8.23 14.22-11.96zm0 0 3 14.96 5.99-5.99m28.44-6.73 2.25-14.95-5.99-3-5.24 3L274 47.1l-2.25 12.72 8.24 5.23 7.48-5.23 5.99-5.99h3m8.23 14.21 7.83-20.94L327.9 5.98m-15.38 41.13 25.86-17.94M312.52 47.1l21.37 22.44m49.4-59.08-22.45 57.58 21.66-.55 9-3.93 15.75-16.46 5.99-17.94-5.99-14.21-11.98-8.98h-34.43m52.4 35.15 16.47 8.23 9.73-4.49 4.5-7.48v-5.23l-8.24-3-6 3-4.48 8.97-3.75 18.7 8.24 3.74h5.99l8.23-9.73m14.23-24.67 2.24 27.66 19.47-24.67m11.98 14.95 14.97-2.24 1.5-10.47-6.74-5.23-9.73 8.22-5.25 16.45 5.25 11.22 6.73-1.5 8.24-6.73M539.76 1.5l-24.7 68.05m39.67-40.38-17.22 18.7-2.25 11.96 7.5 5.23 14.96-15.7-3-8.23-2.24-2.24 9.74-1.5m11.22-10.47 4.5 14.21m0 0L562.2 86m15.73-44.87 16.47-8.97 1.5 19.44-17.97 5.23m23.95-15.7 14.23 8.23 12.72-8.23v-8.97l-15.72-3-8.23 24.68 8.23 11.22 15.72-11.22m7.49 15.7 7.11-21.3 7.11-21.32m-7.11 21.31 28.82-13.83M0 80.02l548.74-3.74H668L659.5 92" />
+      {/* Pre-split mask stroke paths (each former M/m subpath is now its own element) */}
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M38.93,0 L9.73,71.8" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M18.72,11.97 L67.38,8.23" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M16.47,35.15 L56.15,35.15" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M70.37,29.17 L57.64,59.83 L65.13,65.06 L74.11,56.83" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M74.11,56.83 L83.85,35.15" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M74.1,56.83 L86.1,68.05" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M115.3,3 L93.58,68.05" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M132.5,3 L110.8,68.05" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M190.15,19.45 L199.88,8.23 L190.15,2.99 L175.18,11.22 L169.18,22.43 L169.18,29.17 L181.17,47.11 L184.91,56.83 L178.92,65.06 L171.43,68.06 L161.7,69.55 L154.22,69.55 L149.72,63.57 L151.22,56.83" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M227.58,5.98 L197.64,68.05 L203.63,68.05 L209.61,63.57 L211.86,59.83" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M195.39,29.17 L234.32,26.92" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M253.78,44.87 L245.55,56.83 L239.55,62.07 L231.32,63.57 L231.32,56.83 L234.32,49.36 L239.56,41.13 L253.78,29.17 Z" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M253.78,44.87 L256.78,59.83 L262.77,53.84" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M291.21,47.11 L293.46,32.16 L287.47,29.16 L282.23,32.16 L274,47.1 L271.75,59.82 L279.99,65.05 L287.47,59.82 L293.46,53.83 L296.46,53.83" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M304.69,68.04 L312.52,47.1 L327.9,5.98" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M312.52,47.11 L338.38,29.17" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M312.52,47.1 L333.89,69.54" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M383.29,10.46 L360.84,68.04 L382.5,67.49 L391.5,63.56 L407.25,47.1 L413.24,29.16 L407.25,14.95 L395.27,5.97 L360.84,5.97" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M413.24,41.12 L429.71,49.35 L439.44,44.86 L443.94,37.38 L443.94,32.15 L435.7,29.15 L429.7,32.15 L425.22,41.12 L421.47,59.82 L429.71,63.56 L435.7,63.56 L443.93,53.83" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M458.16,29.16 L460.4,56.82 L479.87,32.15" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M491.85,47.1 L506.82,44.86 L508.32,34.39 L501.58,29.16 L491.85,37.38 L486.6,53.83 L491.85,65.05 L498.58,63.55 L506.82,56.82" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M539.76,1.5 L515.06,69.55" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M554.73,29.17 L537.51,47.87 L535.26,59.83 L542.76,65.06 L557.72,49.36 L554.72,41.13 L552.48,38.89 L562.22,37.39" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M573.44,26.92 L577.94,41.13" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M577.94,41.13 L562.2,86" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M577.93,41.13 L594.4,32.16 L595.9,51.6 L577.93,56.83" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M601.88,41.13 L616.11,49.36 L628.83,41.13 L628.83,32.16 L613.11,29.16 L604.88,53.84 L613.11,65.06 L628.83,53.84" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M636.32,69.54 L643.43,48.24 L650.54,26.92" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M643.43,48.23 L672.25,34.4" />
+      <path className="trace-path invisible" stroke="#000" strokeWidth="10" d="M0,80.02 L548.74,76.28 L668,76.28 L659.5,92" />
     </mask>
     <g mask="url(#mask0_80_515)">
       <path stroke="#34c759" strokeWidth="4" d="M10 81.9 555.84 76m24.4 0H669l-8.14 14" />
