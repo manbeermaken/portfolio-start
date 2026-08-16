@@ -4,7 +4,7 @@ import { int, sqliteTable, text } from 'drizzle-orm/sqlite-core'
 export const projectsTable = sqliteTable('projects', {
   id: int().primaryKey({ autoIncrement: true }),
   name: text().notNull(),
-  domain: text(),
+  domain: text().notNull(),
   live_url: text(),
   github_url: text(),
   short_desc: text(),
