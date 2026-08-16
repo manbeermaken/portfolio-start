@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router"
-import { icons } from "../icons/icons"
+import { skillIcons } from "../icons"
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import { useRef } from 'react'
@@ -24,10 +24,10 @@ export default function ContentSkills({ }: Props) {
                 </svg>
             </div>
             <div className="grid grid-cols-3 max-w-[80%] lg:max-w-[40%] gap-y-6">
-                {icons.map(({ name, tooltip, Icon }) => (
+                {skillIcons.map(({ name, tooltip, Icon }) => (
                     <Link to="/projects" search={() => ({ s: name })} key={name}
                         className="w-fit hover:scale-105 transition-transform duration-300">
-                        <Icon key={tooltip} className="size-8 lg:size-10" />
+                        <Icon key={tooltip} className="size-8 lg:size-10 text-foreground fill-foreground" />
                     </Link>
                 ))}
             </div>
