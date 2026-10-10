@@ -1,24 +1,23 @@
-import { Projects } from '#/components'
-import Navbar from '#/components/Navbar/Navbar'
+import { Projects, Navbar } from '#/components'
 import { createFileRoute } from '@tanstack/react-router'
-import { createServerFn } from '@tanstack/react-start'
-import { db, projectsTable } from '#/db'
+import { projectsQueryOptions } from '#/queries/projects'
+import { useSuspenseQuery } from '@tanstack/react-query'
 
-const getProjects = createServerFn({ method: 'GET' }).handler(async () => {
-  return await db.select().from(projectsTable)
-})
 
 export const Route = createFileRoute('/projects/')({
   component: RouteComponent,
-  loader: () => getProjects(),
+  loader: async ({ context }) => {
+    await context.queryClient.fetchQuery(projectsQueryOptions)
+  },
+  preloadStaleTime: 30_000
 })
 
 function RouteComponent() {
-  const projects = Route.useLoaderData()
+  const { data: projects } = useSuspenseQuery(projectsQueryOptions)
   return (
     <div className="max-w-360 mx-auto px-2 lg:px-0 relative pt-14 lg:pt-15">
       <Navbar />
-      <Projects projects={projects}/>
+      <Projects projects={projects} />
     </div>
   )
 }
