@@ -6,7 +6,6 @@ import { ExternalLink, MousePointerClick } from "lucide-react"
 import { useGSAP } from "@gsap/react"
 import { gsap } from 'gsap'
 import { Flip } from 'gsap/Flip'
-import { projects } from "./projects"
 import { icons, GithubIcon } from "../icons"
 
 type FlipState = ReturnType<typeof Flip.getState>
@@ -14,12 +13,12 @@ type FlipState = ReturnType<typeof Flip.getState>
 gsap.registerPlugin(Flip)
 
 type Props = {
-  projects?: Project[]
+  projects: Project[]
 }
 
 export type Domain = 'backend' | 'frontend' | 'ai-ml'
 
-export default function Projects({ }: Props) {
+export default function Projects({projects }: Props) {
   const [domains, setDomains] = useState<Domain[]>(['backend', 'frontend'])
   const containerRef = useRef<HTMLDivElement | null>(null)
   const flipState = useRef<FlipState | null>(null)
