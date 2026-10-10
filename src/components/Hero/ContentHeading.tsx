@@ -33,7 +33,7 @@ export default function ContentHeading({ }: Props) {
 
     return (
         <div ref={containerRef} className="flex flex-col gap-2 mb-8">
-            <h2 className="opacity-0 text-2xl lg:text-4xl font-semibold text-background-secondary">Manbeer Singh</h2>
+            <h2 className="opacity-0 text-2xl lg:text-4xl font-semibold text-background-secondary">Manbeer Singh Maken</h2>
             <div className='w-full relative -translate-x-1 lg:-translate-x-3'>
                 <TitleSvg className='w-full lg:w-[80%] h-auto' />
             </div>
